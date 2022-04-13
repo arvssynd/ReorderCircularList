@@ -15,52 +15,52 @@ namespace ReorderCircularList
                 //    Position = 47,
                 //    PositionInternal = 1,
                 //},
-                //new Analysis(){
-                //    Name = "analisi 2",
-                //    Position = 48,
-                //    PositionInternal = 2,
-                //},
-                //new Analysis(){
-                //    Name = "analisi 3",
-                //    Position = 49,
-                //    PositionInternal = 3,
-                //},
                 new Analysis(){
-                    Name = "analisi 4",
-                    Position = 35,
+                    Name = "analisi 2",
+                    Position = 49,
                     PositionInternal = 1,
                 },
                 new Analysis(){
-                    Name = "analisi 5",
-                    Position = 36,
+                    Name = "analisi 3",
+                    Position = 50,
                     PositionInternal = 2,
                 },
                 new Analysis(){
-                    Name = "analisi 6",
-                    Position = 37,
+                    Name = "analisi 4",
+                    Position = 1,
                     PositionInternal = 3,
                 },
                 new Analysis(){
-                    Name = "analisi 7",
-                    Position = 38,
+                    Name = "analisi 5",
+                    Position = 2,
                     PositionInternal = 4,
                 },
-                new Analysis(){
-                    Name = "analisi 8",
-                    Position = 39,
-                    PositionInternal = 5,
-                },
+                //new Analysis(){
+                //    Name = "analisi 6",
+                //    Position = 37,
+                //    PositionInternal = 3,
+                //},
+                //new Analysis(){
+                //    Name = "analisi 7",
+                //    Position = 38,
+                //    PositionInternal = 4,
+                //},
+                //new Analysis(){
+                //    Name = "analisi 8",
+                //    Position = 39,
+                //    PositionInternal = 5,
+                //},
             };
 
 
             // QUESTI VALORI SONO POSITION INTERNAL SEMPRE
             // muovo posizione 1 alla posizione 4
-            //var previousPositionInternal = 1;
-            //var newPositionInternal = 5;
+            var previousPositionInternal = 2;
+            var newPositionInternal = 4;
 
             // muovo posizione 4 alla posizione 1
-            var previousPositionInternal = 4;
-            var newPositionInternal = 1;
+            //var previousPositionInternal = 4;
+            //var newPositionInternal = 1;
 
             var found = false;
             var newStartIndex = 0;
@@ -96,7 +96,7 @@ namespace ReorderCircularList
                 {
                     if (item.PositionInternal <= newPositionInternal)
                     {
-                        item.PositionInternal -= 1;
+                        item.PositionInternal--;
                     }
                 }
             }
