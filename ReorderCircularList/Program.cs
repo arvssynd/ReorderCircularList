@@ -128,7 +128,10 @@ namespace ReorderCircularList
                             newPositionInternal > previousPositionInternal
                            )
                         {
-                            item.PositionInternal++;
+                            if (item.PositionInternal >= newPositionInternal)
+                            {
+                                item.PositionInternal++;
+                            }
                         }
                         else if (newPositionInternal < previousPositionInternal)
                         {
